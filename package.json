@@ -1,0 +1,15 @@
+{
+  "name": "kafe-proeveeksamen",
+  "version": "1.0.0",
+  "description": "wireframe meny UI 1:\r https://wireframe.cc/bjtQ3h",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

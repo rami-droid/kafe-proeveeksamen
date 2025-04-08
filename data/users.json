@@ -1,0 +1,24 @@
+[
+  {
+    "username": "test",
+    "password": "secure123"
+  },
+  {
+    "username": "asd",
+    "password": "567",
+    "loggedIn": false,
+    "points": 0
+  },
+  {
+    "username": "ggdfgdfg",
+    "password": "ret4345345345345ÆØÆæ@@£€",
+    "loggedIn": false,
+    "points": 0
+  },
+  {
+    "username": "minimacc07",
+    "password": "juhwrv sndfvhdf",
+    "loggedIn": false,
+    "points": 0
+  }
+]
