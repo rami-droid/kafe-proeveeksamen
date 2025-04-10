@@ -39,7 +39,6 @@ app.post('/users', (req, res) => {
 
     let users = JSON.parse(data);
     users.push(newUser);
-
     // Skriver den nye filen til users.json
     fs.writeFile(filePath, JSON.stringify(users, null, 2), err => {
       if (err) return res.status(500).send('Error writing users');
