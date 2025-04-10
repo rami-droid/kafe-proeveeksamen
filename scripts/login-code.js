@@ -35,9 +35,7 @@ loginBtn.addEventListener("click", () => {
             }
             localStorage.setItem('userSession', JSON.stringify(userSession));
 
-            console.log(matchedUser)
-
-            //indow.location.href = "userpage.html"
+            window.location.href = "userpage.html"
         } else {
             alert("ugyldig brukernavn eller passord.")
         }
