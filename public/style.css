@@ -210,7 +210,7 @@ nav a:hover::after {
     color: #fff;
 }
 
-/* to knapp typer primary and secondary*/
+/* to knapp typer, primary and secondary*/
 .primary, .secondary {
     display: inline-block;
     padding: 1rem 2rem;
@@ -223,6 +223,7 @@ nav a:hover::after {
     cursor: pointer;
     text-decoration: none;
     margin: 0.25rem;
+    box-sizing: border-box;
 }
 
 .primary {
