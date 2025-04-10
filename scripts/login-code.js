@@ -15,27 +15,29 @@ function generateSessionID() {
 console.log(generateSessionID())
 
 loginBtn.addEventListener("click", () => {
-    const newUser = new user(usernameInput.value, passwordInput.value)
     //leser user.json
     fetch('/users').then(res => res.json())
     .then(users => {
         //sjekk for at brukeren eksisterer
-        const usernameExists = users.some(
-            user => user.username === newUser.username || user.password === newUser.password
+        const matchedUser = users.find(
+            user => user.username === usernameInput.value && user.password === passwordInput.value
         )
 
-        if (usernameExists) {
+        if (matchedUser) {
             //lagre session ID i localstorage
             const sessionId = generateSessionID();
             const userSession =  {
                 sessionId: sessionId, 
-                username: newUser.username,
-                points: newUser.points, 
-                loggedIn: true
+                username: matchedUser.username,
+                points: matchedUser.points, 
+                loggedIn: true,
+                reservations: matchedUser.reservations
             }
             localStorage.setItem('userSession', JSON.stringify(userSession));
 
-            window.location.href = "userpage.html"
+            console.log(matchedUser)
+
+            //indow.location.href = "userpage.html"
         } else {
             alert("ugyldig brukernavn eller passord.")
         }
