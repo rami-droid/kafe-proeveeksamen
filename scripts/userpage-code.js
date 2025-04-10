@@ -1,8 +1,13 @@
 const user = JSON.parse(localStorage.getItem("userSession"));
 
 const userHeader = document.querySelector("h1")
-console.log(user)
 const loginBtn = document.querySelector("#login-btn")
+const pointsSection = document.querySelector("#points-section")
+
+const pointsRender = document.querySelector("#points-render")
+
+const pointsProgress = document.querySelector("#points-progress")
+
 
 
 loginBtn.addEventListener("click", () => {
@@ -10,17 +15,28 @@ loginBtn.addEventListener("click", () => {
     if (!user) {
         window.location.href = "login.html";
     } else {
-
+        localStorage.removeItem("userSession")
+        location.reload()
     }
 })
 
-
+//endrer bare siden om brukeren er logget inn, redirect ellers
 if (!user) {
     window.location.href = "login.html";
 } else {
+    let displayPoints = user.points
+
+    while (displayPoints <= 1000) {
+        
+    }
+
     loginBtn.innerText = "logg ut"
     userHeader.innerText = `Velkommen, ${user.username}!`
+
+    pointsRender.children[1].innerText = user.points
+
+    
 }
 
-const pointsSection = document.querySelector("#points-section")
+
 

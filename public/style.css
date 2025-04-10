@@ -98,6 +98,7 @@ p h1 h2 h3 h4 h5 small {
 
 }
 
+/*fikse margin på body og lage header layout*/
 body {
     background-color: var(--background);
     margin: 0;
@@ -107,7 +108,7 @@ header {
     grid-template-columns: 3fr 6fr 2fr; 
 }
 
-/*hero page background and text*/
+/*hero side bakgrunn og tekst*/
 #hero {
     width: 100%;
     height: 25rem;
@@ -153,7 +154,6 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/*navbar styling*/
 nav {
     display: flex;
     gap: 30px;
@@ -193,7 +193,7 @@ nav a:hover::after {
     left: 0;
 }
 
-/* login button */
+/* login knapp*/
 #login-btn {
     background: none;
     border: 2px solid var(--accent);
@@ -210,7 +210,7 @@ nav a:hover::after {
     color: #fff;
 }
 
-/* buttons, primary and secondary*/
+/* to knapp typer primary and secondary*/
 .primary, .secondary {
     display: inline-block;
     padding: 1rem 2rem;
@@ -261,7 +261,7 @@ nav a:hover::after {
     transform: scale(0.98);
 }
 
-/*about us*/
+/*about us footeren*/
 #about-us {
     padding: 4rem 10%;
     background: var(--background-50);
@@ -275,7 +275,7 @@ nav a:hover::after {
     text-transform: uppercase;
 }
 
-/* Content section */
+/* kortene for populære drinker*/
 #content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
@@ -303,7 +303,7 @@ nav a:hover::after {
 }
 
 
-/* Image Styling */
+/* bildene på kortet*/
 .content-card img {
     width: 100%;
     max-width: 15rem;
@@ -330,7 +330,7 @@ nav a:hover::after {
 
 
 
-
+/*Menysiden sin css*/
 #menu-main {
     text-align: center;
 }
@@ -362,6 +362,16 @@ nav a:hover::after {
     background-color: #eee;
     border-radius: 50%;
 }
+
+.radio-group {
+    display: flex;
+}
+
+.radio-group label {
+    
+    flex: 2;
+}
+
 
 .item-card {
     border-radius: 1.5rem;

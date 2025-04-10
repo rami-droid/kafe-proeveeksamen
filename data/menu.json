@@ -11,7 +11,7 @@
         "name": "Djevelens Dråper",
         "description": "Dobbelt espresso så sterk at den vekker selv de døde.",
         "price_nok": 50,
-        "image": "../images/djevelens-draaper.jpg"
+        "image": "../images/djevelens-draaper.png"
       },
       {
         "name": "Stålnerver",
@@ -21,7 +21,7 @@
       },
       {
         "name": "Motorolje",
-        "description": "En trippel espresso med et snev av røkt karamell – ikke for pyser.",
+        "description": "En trippel espresso med et snev av røkt karamell - ikke for pyser.",
         "price_nok": 65,
         "image": "../images/motorolje.png"
       },
@@ -29,27 +29,27 @@
         "name": "Nattsvart Nitro",
         "description": "Kald nitrobrygget kaffe som treffer hardere enn en nordisk vinterstorm.",
         "price_nok": 70,
-        "image": "../images/.png"
+        "image": "../images/nattsvart-nitro.png"
       }
     ],
     "lattes": [
       {
         "name": "Betong Latte",
-        "description": "Sterk espresso blandet med fyldig helmelk – smooth, men ikke svak.",
+        "description": "Sterk espresso blandet med fyldig helmelk - smooth, men ikke svak.",
         "price_nok": 60,
-        "image": "https://placehold.co/300x300"
+        "image": "../images/betong-latte.jpg"
       },
       {
         "name": "Støvlager Cappuccino",
         "description": "En kraftig cappuccino med ekstra skum, inspirert av industriens råhet.",
         "price_nok": 58,
-        "image": "https://placehold.co/300x300"
+        "image": "../images/stoevlager-cappuccino.jpg"
       },
       {
         "name": "Jernhånd Cortado",
         "description": "Perfekt balanse mellom espresso og dampet melk - smått, men mektig.",
         "price_nok": 55,
-        "image": "https://placehold.co/300x300"
+        "image": "../images/jernhaand-cortado.jpg"
       }
     ],
     "pastries": [
@@ -57,25 +57,25 @@
         "name": "Stålbakt Brød",
         "description": "Rustikt surdeigsbrød med smør og honning.",
         "price_nok": 55,
-        "image": "https://placehold.co/300x300"
+        "image": "../images/staalbakt-broed.jpg"
       },  
       {
         "name": "Smidd Smørbrød",
         "description": "Røkt skinke, cheddar og sennep i et grillet surdeigsbrød.",
         "price_nok": 85,
-        "image": "https://placehold.co/300x300"
+        "image": "../images/smidd-smoerbroed.jpg"
       },
       {
         "name": "Blytung Brownie",
         "description": "Intens mørk sjokoladebrownie, tett nok til å veie deg ned.",
         "price_nok": 65,
-        "image": "https://placehold.co/300x300"
+        "image": "../images/blytung-brownie.jpg"
       },
       {
         "name": "Karbonkake",
         "description": "En kullsvart lakris- og sjokoladekake, like mørk som natten.",
         "price_nok": 70,
-        "image": "https://placehold.co/300x300"
+        "image": "../images/karbonkake.jpg"
       }
     ]
   }

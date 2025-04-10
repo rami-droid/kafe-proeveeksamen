@@ -28,3 +28,9 @@ https://wireframe.cc/MErLlt
 
 
 ## **Kilder**
+
+- Beskrivelser/boilerplate text - chatgpt
+
+- bilde av "nattsvart nitro, motorolje, djevelens-dråper, svart magi" - KI generert av chatgpt
+- bilde av latteer - KI generert av DeepAI
+- bilde av bakst - KI generert av Canva dream lab
