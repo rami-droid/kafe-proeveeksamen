@@ -139,6 +139,61 @@ header {
     flex: 1;
 }
 
+/* kortene for populære drinker*/
+#content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+    padding: 4rem 10%;
+    text-align: center;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+    padding: 4rem 10%;
+    text-align: center;
+    background: var(--background)
+}
+
+.content-card {
+    background: #fff;
+    color: var(--text);
+    padding: 2rem;
+    border: 2px solid var(--accent-500); 
+    box-shadow: 4px 4px 0px #111;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    padding-bottom: 5rem;
+}
+
+
+/* bildene på kortet*/
+.content-card img {
+    width: 100%;
+    max-width: 15rem;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.2s ease;
+}
+
+.content-card img {
+    width: 80%;
+}
+
+.content-card:hover {
+    background: var(--secondary);
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 6px 6px 0px #111;
+}
+
+.content-card:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+
 #points-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -282,60 +337,6 @@ nav a:hover::after {
     font-weight: bold;
     text-transform: uppercase;
 }
-
-/* kortene for populære drinker*/
-#content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    gap: 2rem;
-    padding: 4rem 10%;
-    text-align: center;
-}
-
-#content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    gap: 2rem;
-    padding: 4rem 10%;
-    text-align: center;
-    background: var(--background)
-}
-
-.content-card {
-    background: #fff;
-    color: var(--text);
-    padding: 2rem;
-    border: 2px solid var(--accent-500); 
-    box-shadow: 4px 4px 0px #111;
-    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-}
-
-
-/* bildene på kortet*/
-.content-card img {
-    width: 100%;
-    max-width: 15rem;
-    height: auto;
-    filter: grayscale(100%);
-    transition: filter 0.3s ease, transform 0.2s ease;
-}
-
-.content-card img {
-    width: 80%;
-}
-
-.content-card:hover {
-    background: var(--secondary);
-    color: #fff;
-    transform: scale(1.05);
-    box-shadow: 6px 6px 0px #111;
-}
-
-.content-card:hover img {
-    filter: grayscale(0%);
-    transform: scale(1.05);
-}
-
 
 
 /*Menysiden sin css*/
@@ -578,6 +579,17 @@ input[type="date"]:focus {
     transform: translateX(5px);
 }
 
+.reservation-card-date {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.reservation-card-people {
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border-left: 1px solid var(--text-200);
+}
+
 
 #userpage {
     text-align: center;
@@ -693,4 +705,62 @@ input[type="password"], input[type="text"]{
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--text);
+}
+
+#contact-footer {
+    background-color: #111;
+    color: var(--text-100);
+    padding: 3rem 10%;
+    margin-top: 3rem;
+    text-align: center;
+    border-top: 3px solid var(--accent);
+    margin-bottom: 2rem;
+}
+
+#contact-footer h1 {
+    text-transform: uppercase;
+    color: var(--text-100);
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+#contact-footer h1::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 25%;
+    width: 50%;
+    height: 3px;
+    background-color: var(--accent);
+}
+
+#contact-footer div {
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+#contact-footer a {
+    color: var(--secondary-400);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contact-footer a:hover {
+    color: var(--accent);
+}
+
+input[type="number"] {
+    font-family: 'Host Grotesk';
+    padding: 0.75rem;
+    border: 2px solid var(--text-300);
+    background: var(--background-50);
+    min-width: 200px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: var(--accent);
 }

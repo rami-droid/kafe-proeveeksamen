@@ -29,22 +29,29 @@
             <main id="contact">
                 <form>
                     <h1>Reserver et bord.</h1>
-                    <input type="date">
-                    <button type="submit" class="secondary">reserver</button>
+                    <strong style="margin-right: 12.75rem;">dato</strong><strong>antall folk</strong> <br>
+                    <input type="date" value="2025-04-10">
+                    <input type="number" min="1" max="5" value="1">
+                    <button class="secondary">reserver</button>
+
                 </form>
 
-                <div>
-                    <h2>reserverte datoer</h2>
+                <div id="reservation-display">
+                    <h2>dine reserverte datoer</h2>
 
-                    <div class="reservation-card">dato:dd/mm  x person</div>
+                    <div class="reservation-card">
+                        <div class="reservation-card-info">
+                            <span class="reservation-card-date">24. april 2025</span>
+                            <span class="reservation-card-people">4 personer</span>
+                        </div>
+                    </div>
                 </div>
 
                 <div id="contact-footer">
                     <h1>kontakt oss</h1>
                     <div>
-                        tlf: <br>
-                        epost: <br>
-                        sosiale media: 
+                        tlf: <strong>+47 123 45 678</strong><br>
+                        epost: <a href="mailto:info@svart-og-sterk.no">info@svart-og-sterk.no</a><br>
                     </div>
                 </div>
 
