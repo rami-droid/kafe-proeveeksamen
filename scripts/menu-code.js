@@ -25,6 +25,7 @@ fetch('/menu')
     .then (data => {
         const menuItems = data
         console.log(menuItems)
+        init(data)
         setupEventListeners(data)
     })
     .catch(error => {
@@ -50,6 +51,9 @@ function setupEventListeners(items) {
         const coffeeArrays = items.menu.pastries
         updateDisplay(coffeeArrays)
     })
+    radio4.addEventListener("click", ()=> {
+        init(items)
+    })
 }
 
 const radio1 = document.querySelector("#coffee");
@@ -57,6 +61,7 @@ const radio1 = document.querySelector("#coffee");
 const radio2 = document.querySelector("#lattes")
 
 const radio3 = document.querySelector("#pastries")
+const radio4 = document.querySelector("#all")
 const menuDisplay = document.querySelector("#menu-display") 
 
 function updateDisplay(items) {
@@ -74,4 +79,27 @@ function updateDisplay(items) {
         console.log(itemCard)
         menuDisplay.appendChild(itemCard)
     });
+}
+
+function updateInit(items) {
+    items.forEach(item => {
+        console.log(item)
+        const itemCard = document.createElement("div")
+        itemCard.className = "item-card"
+        itemCard.innerHTML = `
+                        <img src="${item.image}" alt="${item.name}">
+                        <h3>${item.name}</h3>
+                        <p>${item.description}</p>
+                        <p>${item.price_nok}NOK</p>
+        `
+        console.log(itemCard)
+        menuDisplay.appendChild(itemCard)
+    });
+}
+
+function init(items) {
+    menuDisplay.innerHTML = ""
+    updateInit(items.menu.lattes);
+    updateInit(items.menu.coffee);
+    updateInit(items.menu.pastries);
 }
