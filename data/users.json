@@ -1,7 +1,8 @@
 [
   {
     "username": "test",
-    "password": "secure123"
+    "password": "secure123",
+    "points": 105
   },
   {
     "username": "asd",
