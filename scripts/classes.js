@@ -8,4 +8,7 @@ export class user {
         this.points = 0
         this.reservations = []
     }
+    getProfile() {
+        return {username, password}
+    }
 }
