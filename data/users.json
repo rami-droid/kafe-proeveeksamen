@@ -2,7 +2,21 @@
   {
     "username": "test",
     "password": "secure123",
-    "points": 105
+    "points": 105,
+    "reservations": [
+      {
+          "date": "2025-04-10T00:00:00.000Z",
+          "amnt": 1
+      },
+      {
+          "date": "2025-04-10T00:00:00.000Z",
+          "amnt": 1
+      },
+      {
+          "date": "2025-04-10T00:00:00.000Z",
+          "amnt": 1
+      }
+  ]
   },
   {
     "username": "asd",
