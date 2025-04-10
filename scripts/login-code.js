@@ -25,6 +25,7 @@ loginBtn.addEventListener("click", () => {
         )
 
         if (usernameExists) {
+            //lagre session ID i localstorage
             const sessionId = generateSessionID();
             const userSession =  {
                 sessionId: sessionId, 

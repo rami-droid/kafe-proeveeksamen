@@ -1,3 +1,11 @@
+const loginBtn = document.querySelector("#login-btn")
+
+
+loginBtn.addEventListener("click", () => {
+    console.log("clicked")
+    window.location.href = "login.html"
+})
+
 fetch('/menu')
     .then(response => {
         if (!response.ok) {

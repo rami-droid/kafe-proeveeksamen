@@ -5,31 +5,31 @@
         "name": "Svart Magi",
         "description": "Mørkbrent håndbrygget svart kaffe for de som liker det ekte og rått.",
         "price_nok": 45,
-        "image": "https://placehold.co/300x300"
+        "image": "../images/svart-magi.png"
       },
       {
         "name": "Djevelens Dråper",
         "description": "Dobbelt espresso så sterk at den vekker selv de døde.",
         "price_nok": 50,
-        "image": "https://placehold.co/300x300"
+        "image": "../images/djevelens-draaper.jpg"
       },
       {
         "name": "Stålnerver",
         "description": "Espresso med et hint av mørk sjokolade, for de som trenger styrke med stil.",
         "price_nok": 55,
-        "image": "https://placehold.co/300x300"
+        "image": "../images/staalnerver.jpg"
       },
       {
         "name": "Motorolje",
         "description": "En trippel espresso med et snev av røkt karamell – ikke for pyser.",
         "price_nok": 65,
-        "image": "https://placehold.co/300x300"
+        "image": "../images/motorolje.png"
       },
       {
         "name": "Nattsvart Nitro",
         "description": "Kald nitrobrygget kaffe som treffer hardere enn en nordisk vinterstorm.",
         "price_nok": 70,
-        "image": "https://placehold.co/300x300"
+        "image": "../images/.png"
       }
     ],
     "lattes": [
@@ -49,26 +49,6 @@
         "name": "Jernhånd Cortado",
         "description": "Perfekt balanse mellom espresso og dampet melk - smått, men mektig.",
         "price_nok": 55,
-        "image": "https://placehold.co/300x300"
-      }
-    ],
-    "specialties": [
-      {
-        "name": "Svart Signatur",
-        "description": "Husets spesialbrygg med en uventet vri - spiss den med krydder eller sjokolade.",
-        "price_nok": 75,
-        "image": "https://placehold.co/300x300"
-      },
-      {
-        "name": "Tjæreskudd",
-        "description": "Espresso med en dash mørk sirup og chili - varm og farlig.",
-        "price_nok": 80,
-        "image": "https://placehold.co/300x300"
-      },
-      {
-        "name": "Asfalt Chai",
-        "description": "Sterk chai latte med ekstra krydder, perfekt for brutale dager.",
-        "price_nok": 70,
         "image": "https://placehold.co/300x300"
       }
     ],
