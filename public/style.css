@@ -164,6 +164,15 @@ nav li {
     display: inline-block;
 }
 
+.curr {
+    color: var(--accent);
+    background-color: var(--background);
+}
+.curr::after {
+    width: 100%;
+    left: 0;
+}
+
 nav a {
     color: #fff;
     text-decoration: none;
