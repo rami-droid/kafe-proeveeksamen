@@ -43,18 +43,38 @@ loginBtn.addEventListener("click", () => {
 });
 
 signupButton.addEventListener("click", () => {
-    const newUser = new user(usernameInput.value, passwordInput.value)
-    fetch('/users', {
-        method: 'POST',
-        headers: {
-            'Content-type': 'application/json'
-        },
-        body: JSON.stringify(newUser)
-    })
-    .then(res => res.text())
-    .then(msg =>{console.log(`${msg}, user; ${newUser.getProfile}`)}) //litt error handling og sånt
-    .catch(err => {console.error(err)})
-})
+    const newUser = new user(usernameInput.value, passwordInput.value);
+
+    //hente eksisterende brukere
+    fetch('/users')
+        .then(res => res.json())
+        .then(users => {
+            const userExists = users.some(user => user.username === usernameInput.value);
+
+            if (userExists) {
+                alert(`brukernavnet "${newUser.username}" er allerede tatt.`)
+            } else {
+                // om brukernavnet er ikke tatt, lag brukeren
+                fetch('/users', {
+                    method: 'POST',
+                    headers: {
+                        'Content-type': 'application/json'
+                    },
+                    body: JSON.stringify(newUser)
+                })
+                .then(res => res.text())
+                .then(msg => {
+                    console.log(`${msg}, user: ${newUser.getProfile()}`)
+                })
+                .catch(err => {
+                    console.error(err)
+                });
+            }
+        })
+        .catch(err => {
+            console.error("Error fetching users:", err);
+        });
+});
 
 exitBtn.addEventListener("click", () => {
     window.history.back();
