@@ -33,5 +33,26 @@
     "password": "sdfh",
     "loggedIn": false,
     "points": 0
+  },
+  {
+    "username": "test2",
+    "password": "secure124",
+    "loggedIn": false,
+    "points": 0,
+    "reservations": []
+  },
+  {
+    "username": "",
+    "password": "",
+    "loggedIn": false,
+    "points": 0,
+    "reservations": []
+  },
+  {
+    "username": "Rami",
+    "password": "superKul123",
+    "loggedIn": false,
+    "points": 0,
+    "reservations": []
   }
 ]
