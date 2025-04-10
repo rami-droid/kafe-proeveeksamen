@@ -14,6 +14,8 @@ function generateSessionID() {
 
 console.log(generateSessionID())
 
+
+//håndterer innlogging ved å sjekke input feltene mot databasen.
 loginBtn.addEventListener("click", () => {
     //leser user.json
     fetch('/users').then(res => res.json())
@@ -42,6 +44,7 @@ loginBtn.addEventListener("click", () => {
     })
 });
 
+//registrerer ny bruker og lagrer den i databasen om brukernavnet er unikt.
 signupButton.addEventListener("click", () => {
     const newUser = new user(usernameInput.value, passwordInput.value);
 
@@ -76,6 +79,7 @@ signupButton.addEventListener("click", () => {
         });
 });
 
+//tilbake knapp som sender til forrige side
 exitBtn.addEventListener("click", () => {
     window.history.back();
 });

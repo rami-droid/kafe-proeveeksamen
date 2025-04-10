@@ -15,7 +15,7 @@ if (user) {
 
 
 
-//login knapp funksjon
+//Logger inn og ut avhenging av innloggingstatus
 loginBtn.addEventListener("click", () => {
     console.log("clicked")
     if (!user) {
@@ -26,10 +26,12 @@ loginBtn.addEventListener("click", () => {
     }
 })
 
+//går til meny siden
 redirBtn.addEventListener("click", () => {
     window.location.href = "menu.html"
 })
 
+//går til login eller reservering siden avhengig av innloggingstatus.
 loginSecondary.addEventListener("click", () => {
     if (!user) {
         window.location.href = "login.html"

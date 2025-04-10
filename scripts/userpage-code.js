@@ -1,3 +1,5 @@
+//viser brukerens informasjon og poeng
+
 const user = JSON.parse(localStorage.getItem("userSession"));
 
 const userHeader = document.querySelector("h1")
@@ -22,7 +24,7 @@ loginBtn.addEventListener("click", () => {
     }
 })
 
-//endrer bare siden om brukeren er logget inn, redirect ellers
+//Beregegner og viser poeng og brukernavn om man er logget inn.
 if (!user) {
     window.location.href = "login.html";
 } else {
