@@ -55,8 +55,11 @@ signupButton.addEventListener("click", () => {
             const userExists = users.some(user => user.username === usernameInput.value);
 
             if (userExists) {
-                alert(`brukernavnet "${newUser.username}" er allerede tatt.`)
-            } else {
+                alert(`brukernavnet "${newUser.username}" er allerede tatt, eller du har ikke fylt ut alle feltene.`)
+            } else if(usernameInput.value == "" || passwordInput.value == "") {
+                alert("Fyll ut begge feltene")
+            }
+            else {
                 // om brukernavnet er ikke tatt, lag brukeren
                 fetch('/users', {
                     method: 'POST',
@@ -68,10 +71,13 @@ signupButton.addEventListener("click", () => {
                 .then(res => res.text())
                 .then(msg => {
                     console.log(`${msg}, user: ${newUser.getProfile()}`)
+                    usernameInput.value = ""; passwordInput.value = "";
+                    alert("bruker opprettet! Du kan nå logge inn.")
                 })
                 .catch(err => {
                     console.error(err)
                 });
+                
             }
         })
         .catch(err => {
