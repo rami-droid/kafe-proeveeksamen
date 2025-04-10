@@ -646,14 +646,14 @@ input[type="password"], input[type="text"]{
     width: 50%;
     height: 50%;
     position: fixed;
-    inset: 0px; 
+    inset: 0px;
     margin: auto;
     text-align: center;
     background: #fff;
     padding: 2rem;
     border: 2px solid var(--primary);
     box-shadow: 4px 4px 0 #111;
-    margin-bottom: 3rem;
+    margin-bottom: 10%;
 }
 
 #login-form div {
