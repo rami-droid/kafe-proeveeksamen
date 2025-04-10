@@ -25,7 +25,7 @@ app.get('/users', (req, res) => {
     const filePath = path.join(__dirname, 'data', 'users.json');
     fs.readFile(filePath, 'utf8', (err, data) => {
       if (err) return res.status(500).send('Error reading users');
-      res.json(JSON.parse(data));  // Sender bruker array til frontend
+      res.json(JSON.parse(data));  // Sender bruker arrayen til frontend
     });
   });
   
