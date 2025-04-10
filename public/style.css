@@ -439,7 +439,6 @@ nav a:hover::after {
 #categories label {
     font-size: 1.1rem;
     margin-right: 0.5rem;
-    cursor: pointer;
     transition: color 0.2s ease;
     text-transform: capitalize;
 }
