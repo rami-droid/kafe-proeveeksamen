@@ -8,6 +8,8 @@ const pointsRender = document.querySelector("#points-render")
 
 const pointsProgress = document.querySelector("#points-progress")
 
+console.log(user)
+
 
 
 loginBtn.addEventListener("click", () => {
@@ -26,8 +28,8 @@ if (!user) {
 } else {
     let displayPoints = user.points
 
-    while (displayPoints <= 1000) {
-        
+    while (displayPoints >= 1000) {
+        displayPoints -= 1000
     }
 
     loginBtn.innerText = "logg ut"
@@ -35,7 +37,8 @@ if (!user) {
 
     pointsRender.children[1].innerText = user.points
 
-    
+    pointsProgress.children[1].innerText = `${user.points}/1000`
+    pointsProgress.children[2].value = displayPoints
 }
 
 
