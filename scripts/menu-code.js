@@ -11,10 +11,15 @@ if (user) {
 
 
 
-
+//klikk-event for login/logout
 loginBtn.addEventListener("click", () => {
     console.log("clicked")
-    window.location.href = "login.html"
+    if (!user) {
+        window.location.href = "login.html";
+    } else {
+        localStorage.removeItem("userSession")
+        location.reload()
+    }
 })
 
 //henter meny data og viser fram tingene
