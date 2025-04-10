@@ -706,7 +706,6 @@ input[type="password"], input[type="text"]{
     cursor: pointer;
     color: var(--text);
 }
-
 #contact-footer {
     background-color: #111;
     color: var(--text-100);
@@ -714,7 +713,11 @@ input[type="password"], input[type="text"]{
     margin-top: 3rem;
     text-align: center;
     border-top: 3px solid var(--accent);
-    margin-bottom: 2rem;
+    height: 40%;
+}
+
+#reservation-display {
+    padding: 1rem;
 }
 
 #contact-footer h1 {
