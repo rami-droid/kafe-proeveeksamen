@@ -1,14 +1,7 @@
-wireframe meny UI 1:
-https://wireframe.cc/bjtQ3h
+**Website for an imaginary coffee shop for my mock exams**
+ - bruker vanlia JS, css, html.
+ - NodeJS as backend to log user data
 
-wireframe meny UI 2:
-https://wireframe.cc/llKgMv
-
-wireframe userpage:
-https://wireframe.cc/7ON2Lo
-
-wireframe contact: 
-https://wireframe.cc/MErLlt
 
 
 ## **Plan**
@@ -34,3 +27,15 @@ https://wireframe.cc/MErLlt
 - bilde av "nattsvart nitro, motorolje, djevelens-dråper, svart magi" - KI generert av chatgpt
 - bilde av latteer - KI generert av DeepAI
 - bilde av bakst - KI generert av Canva dream lab
+
+wireframe meny UI 1:
+https://wireframe.cc/bjtQ3h
+
+wireframe meny UI 2:
+https://wireframe.cc/llKgMv
+
+wireframe userpage:
+https://wireframe.cc/7ON2Lo
+
+wireframe contact: 
+https://wireframe.cc/MErLlt
