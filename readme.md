@@ -1,9 +1,21 @@
-**Website for an imaginary coffee shop for my mock exams**
- - bruker vanlia JS, css, html.
- - NodeJS as backend to log user data
+## **Website for an imaginary coffee shop for my mock exams** 
+Coffee shop website built with vanilla html, css, and Javascript. This is a website for a fictional coffee shop I made in around 5 days for my mock exams.
 
+# **Design philosophy**
+- Modern web deisgn, brutalist style
+- responsive grid layout
 
+# **features**
+ - user authentication with login system
+ - reservation system that saves to user data
+ - dynamic menu loading from backend json DATA
+ - loyalty program simulation
+ - Responsive design
 
+# **Tech stack**
+ - **Frontend:** HTML5, CSS3, vanilla JavaScript
+ - **Data storage:** localstorage for session management
+ - **Backend:** JSON files for menu and user data (simulated API)
 ## **Plan**
 
 ### <del>**Fase 1**: wireframing og HTML</del> **FERDIG**
